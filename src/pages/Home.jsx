@@ -106,7 +106,7 @@ const Home = () => {
     setLoading(true);
 
     toast.promise(
-      axios.post("http://localhost:5000/api/callback", formData),
+      axios.post("https://paramit-backend.vercel.app/api/callback", formData),
       {
         loading: "Submitting your call back request...",
         success: () => {
